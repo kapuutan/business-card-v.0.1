@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>kapuutan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="card-out">
+      <div class="card">
+        <div class="card-front"
+          style="transform: rotateY(180deg);-webkit-transform: rotateY(180deg);-ms-transform: rotateY(180deg);-moz-transform: rotateY(180deg);">
+          <div class="content-top" style="padding-top: 5px">
+            <span style="font-size: 45px"> kapuutan </span>
+            <a href="mailto:boris-alekseenkoa@mail.ru><span style="float: right">
+              boris-alekseenkoa@mail.ru
+              </span></a>
+            <hr />
+          </div>
+          <div class="content-top-mid">
+            <div id="me" style="display: inline-block;  width: 130px; border: 2px solid #777"></div>
+            <div style="display: inline-block; vertical-align: top">
+              <span style="font-size: 20.5pt; font-style: italic; font-weight: bold">
+                quality assurance engineer
+              </span>
+
+
+              <div style="
+                    background: #fff;
+                    margin-top: 15px;
+                    padding-right: 7px;
+                    width: max-content;
+                    border: 2px solid #fff;
+                  ">
+                <img src="./assets/tg.png" background:#fff style="width: 50px; vertical-align: middle" />
+                <a style="color: #000" href="https://t.me/kapputan">/kapuutan</a>
+                <img src="./assets/gh.svg" background:#fff style="width: 50px; vertical-align: middle" />
+                <a style="color: #000" href="https://github.com/kapuutan">/kapuutan</a>
+              </div>
+            </div>
+          </div>
+          <div class="content-bot-mid">
+            <canvas width="690px" height="130px" id="canvas" style="display: inline-block"></canvas>
+          </div>
+
+          <div class="content-bottom" style="padding-bottom: 5px">
+            <hr />
+            <span style="line-height: 75px">Samara, RU</span>
+            <span style="font-size: 45px; float: right"> kapuutan </span>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="./assets/qr.png" style="margin-bottom: 10px" />
+          <img src="./assets/np.png" style="width: 300px; margin: 30px" />
+          <img src="./assets/qr.png" style="margin-bottom: 10px" />
+          <p>flip me!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    let len = 2;
+    let rand = 1;
+    let check = [0, 0, 0];
+    rand = Math.random();
+    rand = Math.floor(rand * len);
+    let image = rand;
+    var image_node = new Image();
+    image_node.alt = "pic";
+    image_node.src = "./assets/me" + rand + ".jpg";
+    document.getElementById("me").appendChild(image_node);
+  </script>
+  <script src="matrix.js"></script>
+  <footer>
+  </footer>
+</body>
+
+</html>
